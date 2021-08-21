@@ -1,6 +1,9 @@
+* {
+  box-sizing: border-box;
+}
  body{
    padding-top:3rem;
-   color:white;
+   /* color:white; */
    position: relative;
  }
 
@@ -23,11 +26,13 @@ h3{
   font-size:2rem;
   }
 
+
+
 .social-icons a{
   display:inline-block;
   height:3.5rem;
   width:3.5rem;
-  background-color:#495057;color:#fff!important;
+  color: #3e6060!important;
   border-radius:100%;
   text-align:center;
   font-size:1.5rem;
@@ -39,7 +44,7 @@ h3{
   margin-right:0;
   }
 .social-icons a:hover{
-  background-color:#5dbcd2;
+  background-color:#3e6060!important;
   }
 
 #sideNav .navbar-nav .nav-item .nav-link{
@@ -130,6 +135,13 @@ h3{
              position: absolute;
              z-index: -20;
            }
+           /* .welcomeMessage{
+             height: 40rem;
+             margin-top: 3rem;
+             margin-left: 5rem;
+             position: absolute;
+             z-index: -20;
+           } */
 
            .card-body{
              position: absolute;
@@ -159,28 +171,29 @@ h3{
            .social-icons a {
            display: inline-block;
            width: 3.5rem;
-           background-color: #3c6060;
-           color: #fff!important;
-           border-radius: 100%;
+           color: #3e6060!important;
+           border-radius: .7rem;
+           box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
        }
 
            .social-icons a:hover{
-             background-color: #5ea4a5;
+             color: white!important;
            }
            .contacts a{
-             background-color: #5ea4a5;
+             background-color: white;
            }
            .contacts a:hover{
              background-color: #3c6060;
        }
        #home{
-         height: 48rem;
+         height: 38rem;
          position: relative;
        }
            #experience{
              position: relative;
              padding-left: 1rem;
              padding-right: 1rem;
+             padding-top: 4rem;
            }
            #experience h2{
              color: #3e6060;
@@ -196,7 +209,9 @@ h3{
              padding-bottom: 2rem;
              -webkit-box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
              -moz-box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
-             box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);    }
+             box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
+
+           }
            #project{
              position: relative;
              padding-top: 2rem;
@@ -209,8 +224,8 @@ h3{
              /* margin-top: 45rem; */
            }
            .projectsexplain{
-             background-color: #3e6060;
-             border-radius: 3rem;
+             /* background-color: #3e6060; */
+             /* border-radius: 3rem;
              padding-left: 2rem;
              padding-right: 2rem;
              padding-top: 2rem;
@@ -218,10 +233,12 @@ h3{
              padding-bottom: 2rem;
              -webkit-box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
              -moz-box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
-             box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);    }
+             box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);     */
+           }
 
        #resume{
          position: relative;
+         padding-top: 2rem;
 
        }
 
@@ -241,9 +258,10 @@ h3{
 
        #contact{
          position: relative;
-         padding-top: 6rem;
-         padding-left: 1rem;
-    padding-right: 1rem;
+         margin-top: 5rem;
+         margin-left: 1rem;
+         margin-bottom: 3rem;
+    margin-right: 1rem;
        }
 
        .contactpic{
@@ -255,7 +273,7 @@ h3{
        }
 
        #contact h2{
-         color: #63adae;
+         color: #122c34;
          padding-top: 5rem;
        }
        #contact h5{
@@ -277,7 +295,185 @@ h3{
        .contacts2 a{
          margin-bottom: .5rem;
        }
+       .card{
+         position: relative;
+         box-shadow: none;
+         background: none;
+       }
+       .card-side {
+         height: 35rem;
+         border-radius: 15px;
+         backface-visibility: hidden;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 80%;
+         padding:0rem;
+         color: white
+       }
 
+       .card-side.back {
+         transform: rotateY(-180deg);
+       }
+       .typingtext {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+
+     .typing {
+       width: 11ch;
+       animation: typing 2s steps(22) infinite alternate, blink .5s step-end infinite alternate;
+       white-space: nowrap;
+       overflow: hidden;
+       border-right: .3rem solid;
+       font-size: 1.5em;
+     }
+
+     @keyframes typing {
+       from {
+         width: 0
+       }
+     }
+
+     @keyframes blink {
+       50% {
+         border-color: transparent
+       }
+     }
+
+     #experienceTitle h2{
+       color: #122c34;
+       padding-top: 5rem;
+       text-align: center;
+     }
+
+     #experience{
+       position:relative;
+       margin:0 auto;
+       width:100%;
+       padding-top: 1rem;
+     }
+     .slideIn {
+       transform: translateX(9rem);
+       animation: slideIn 0.8s ease forwards;
+     }
+     .slideIn:nth-child(odd) {
+       animation-duration: 0.6s;
+     }
+
+     @keyframes slideIn {
+       to { transform: translateY(0); }
+     }
+
+     #experience:before{
+       content:'';
+       position:absolute;
+       right:95%;
+       width:.1rem;
+       height:100%;
+       background-color:#c5c5c5;
+     }
+     #experience ul{
+       padding:0;
+     }
+     #experience ul li{
+       position:relative;
+       width:100%;
+       padding:1.5rem 1.5rem;
+     }
+     #experience ul li:nth-child(odd){
+       text-align:right;
+       clear:both;
+     }
+     #experience ul li:nth-child(even){
+       float:right;
+     }
+     .experienceDescription{
+       color: #122c34;
+       margin-top: 2rem;
+     }
+     #experience ul li:nth-child(odd):before
+     {
+       content:'';
+       position:absolute;
+       width:1rem;
+       height:1rem;
+       right:1.5rem;
+       background-color:#006d77;
+       border-radius:50%;
+     }
+     #experience ul li:nth-child(even):before
+     {
+       content:'';
+       position:absolute;
+       width:1rem;
+       height:1rem;
+       right:1.5rem;
+       background-color:#006d77;
+       border-radius:50%;
+
+     }
+     #experience ul li h3{
+       color:#006d77;
+       font-weight:500;
+     }
+     #experience ul li .experienceDate h4{
+       margin:0;
+       font-size:.88rem;
+     }
+     #experience ul li:nth-child(odd) .experienceDate
+     {
+       position:absolute;
+       top:1rem;
+       right:0rem;
+       left:0rem;
+       padding:.5rem 1rem;
+       background-color:#122c34;
+       color:#fff;
+       border-radius:1rem;
+       box-shadow:.125rem .25rem .3rem rgba(0, 0, 0, 0.3);
+     }
+     #experience ul li:nth-child(even) .experienceDate
+     {
+       position:absolute;
+       top:1rem;
+       left:0rem;
+       right:0rem;
+       padding:.5rem 1rem;
+       background-color:#122c34;
+       color:#fff;
+       border-radius:1rem;
+       box-shadow:.125rem .25rem .3rem rgba(0, 0, 0, 0.3);
+     }
+
+     #projectTitle h2{
+       color: #122c34;
+       padding-top: 5rem;
+       text-align: center;
+     }
+
+     .panel {
+       background-position: bottom;
+       background-size: contain;
+       background-repeat: no-repeat;
+       height: 70vh;
+       border-radius: 15px;
+       color: #3e6060;
+       cursor: pointer;
+       flex: 0.5;
+       margin: 1rem;
+       position: relative;
+       -webkit-transition: all 700ms ease-in;
+       border-radius: 1rem;
+       padding-left: 2rem;
+       padding-right: 2rem;
+       padding-top: 2rem;
+       margin-top: 2rem;
+       -webkit-box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
+       -moz-box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
+       box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
+     }
 
 @media (min-width:992px){
   body{
@@ -318,33 +514,96 @@ h3{
       display:block;
       font-family: 'Quicksand', sans-serif;
     }
+
+    .card-side {
+      height: 45rem;
+      transition: all 0.8s ease;
+      padding:2rem;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+    }
+
+    .card:hover .card-side.front {
+      transform: rotateY(180deg);
+    }
+
+    .card:hover .card-side.back {
+      transform: rotateY(0deg);
+    }
+
+  .welcomeMessage{
+    height: 40rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    position: absolute;
+    z-index: -20;
+  }
     .imgfront{
       height: 40rem;
       margin-top: 4rem;
       margin-left: 18vh;
-      position: absolute;
-      z-index: -20;
-    }
-    .card-body{
-      position: absolute;
-      z-index: 20;
-      margin-top: 39.5rem;
-      margin-left: 20rem;
-      background-color: #3e6060;
-      -webkit-box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
--moz-box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
-box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
-      border-radius: 1rem;
-      width: 14rem;
-      text-align: center;
-    }
-    .card-title{
-      color: white;
-      font-weight: 400;
-      font-family: 'Quicksand', sans-serif;
-      margin-bottom: 0;
     }
 
+    .card-body{
+      margin-top: 39.5rem;
+      margin-left: 20rem;
+    }
+
+    #experience{
+      width:90%;    }
+
+    #experience:before{
+      left:50%;
+    }
+
+    #experience ul li{
+      width:50%;
+    }
+    .experienceDescription{
+      margin-top: 0;
+    }
+    #experience ul li:nth-child(odd):before
+    {
+      right:-.55rem;
+    }
+    #experience ul li:nth-child(even):before
+    {
+      left:-.45rem;
+
+    }
+
+    #experience ul li:nth-child(odd) .experienceDate
+    {
+      position: absolute;
+      width: 15rem;
+      right: -34rem;
+      left:34rem;
+    }
+    #experience ul li:nth-child(even) .experienceDate
+    {
+      position: absolute;
+      width: 15rem;
+      right: 17rem;
+      left:-17rem;
+    }
+
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      margin-top: 1rem;
+      width: 90vw;
+    }
+
+    .panel:hover {
+      flex: 1.2;
+    }
+
+    .panel.hover h3 {
+      opacity: 1;
+      transition: opacity 0.3s ease-in 0.6s;
+    }
     .contacts{
       position: absolute;
       margin-left: 55rem;
@@ -353,7 +612,7 @@ box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
     #project{
       position: relative;
       /* margin-top: 95rem; */
-      padding-top: 2rem;
+      padding-top: 4rem;
       padding-left: 1rem;
       padding-right: 1rem;
     }
@@ -372,7 +631,7 @@ padding-left: 1rem;
       #contact{
         position: relative;
         margin-left: 1.5rem;
-        margin-bottom: 3rem;
+        margin-bottom: 11rem;
       }
       .contactpic{
         height: 20rem;
@@ -386,8 +645,8 @@ padding-left: 1rem;
         z-index: -20;
       }
       #contact h2{
-        color: #63adae;
-        padding-top: 10rem;
+        color: #122c34;
+        padding-top: 5rem;
         padding-left: 42rem;
         padding-bottom: 0rem;
         padding-right: 2rem;
