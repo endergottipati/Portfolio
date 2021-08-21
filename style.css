@@ -3,7 +3,6 @@
 }
  body{
    padding-top:3rem;
-   /* color:white; */
    position: relative;
  }
 
@@ -135,13 +134,6 @@ h3{
              position: absolute;
              z-index: -20;
            }
-           /* .welcomeMessage{
-             height: 40rem;
-             margin-top: 3rem;
-             margin-left: 5rem;
-             position: absolute;
-             z-index: -20;
-           } */
 
            .card-body{
              position: absolute;
@@ -221,20 +213,8 @@ h3{
            #project h2{
              color: #63adae;
              padding-bottom: 0rem;
-             /* margin-top: 45rem; */
            }
-           .projectsexplain{
-             /* background-color: #3e6060; */
-             /* border-radius: 3rem;
-             padding-left: 2rem;
-             padding-right: 2rem;
-             padding-top: 2rem;
-             margin-top: 2rem;
-             padding-bottom: 2rem;
-             -webkit-box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
-             -moz-box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
-             box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);     */
-           }
+
 
        #resume{
          position: relative;
@@ -474,7 +454,13 @@ h3{
        -moz-box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
        box-shadow: 0px 4px 7px 0px rgba(54,54,54,1);
      }
-
+     .welcomeMessage{
+       height: 0rem;
+       margin-top: 3rem;
+       margin-left: 5rem;
+       position: absolute;
+       z-index: -20;
+     }
 @media (min-width:992px){
   body{
     padding-top:0;
